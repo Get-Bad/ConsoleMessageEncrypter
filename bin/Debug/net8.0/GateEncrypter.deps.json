@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GateEncrypter/1.0.0": {
+        "runtime": {
+          "GateEncrypter.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GateEncrypter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
