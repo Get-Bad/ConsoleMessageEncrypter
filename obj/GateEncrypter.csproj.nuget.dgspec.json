@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\getba\\OneDrive\\Рабочий стол\\Projects\\C#\\GateEncrypter\\GateEncrypter.csproj": {}
+    "C:\\Users\\getba\\OneDrive\\Рабочий стол\\Projects\\C#\\Gate\\GateEncrypter\\GateEncrypter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\getba\\OneDrive\\Рабочий стол\\Projects\\C#\\GateEncrypter\\GateEncrypter.csproj": {
+    "C:\\Users\\getba\\OneDrive\\Рабочий стол\\Projects\\C#\\Gate\\GateEncrypter\\GateEncrypter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\getba\\OneDrive\\Рабочий стол\\Projects\\C#\\GateEncrypter\\GateEncrypter.csproj",
+        "projectUniqueName": "C:\\Users\\getba\\OneDrive\\Рабочий стол\\Projects\\C#\\Gate\\GateEncrypter\\GateEncrypter.csproj",
         "projectName": "GateEncrypter",
-        "projectPath": "C:\\Users\\getba\\OneDrive\\Рабочий стол\\Projects\\C#\\GateEncrypter\\GateEncrypter.csproj",
+        "projectPath": "C:\\Users\\getba\\OneDrive\\Рабочий стол\\Projects\\C#\\Gate\\GateEncrypter\\GateEncrypter.csproj",
         "packagesPath": "C:\\Users\\getba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\getba\\OneDrive\\Рабочий стол\\Projects\\C#\\GateEncrypter\\obj\\",
+        "outputPath": "C:\\Users\\getba\\OneDrive\\Рабочий стол\\Projects\\C#\\Gate\\GateEncrypter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -66,6 +66,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

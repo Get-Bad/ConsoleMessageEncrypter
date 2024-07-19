@@ -1,0 +1,5 @@
+c:\compiledFiles\GateEncrypter.exe
+c:\compiledFiles\GateEncrypter.dll
+c:\compiledFiles\GateEncrypter.deps.json
+c:\compiledFiles\GateEncrypter.runtimeconfig.json
+c:\compiledFiles\GateEncrypter.pdb

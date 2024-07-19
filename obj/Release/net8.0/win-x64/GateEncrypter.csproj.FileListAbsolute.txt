@@ -1,0 +1,15 @@
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\bin\Release\net8.0\win-x64\GateEncrypter.exe
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\bin\Release\net8.0\win-x64\GateEncrypter.deps.json
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\bin\Release\net8.0\win-x64\GateEncrypter.runtimeconfig.json
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\bin\Release\net8.0\win-x64\GateEncrypter.dll
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\bin\Release\net8.0\win-x64\GateEncrypter.pdb
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\obj\Release\net8.0\win-x64\GateEncrypter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\obj\Release\net8.0\win-x64\GateEncrypter.AssemblyInfoInputs.cache
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\obj\Release\net8.0\win-x64\GateEncrypter.AssemblyInfo.cs
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\obj\Release\net8.0\win-x64\GateEncrypter.csproj.CoreCompileInputs.cache
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\obj\Release\net8.0\win-x64\GateEncrypter.sourcelink.json
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\obj\Release\net8.0\win-x64\GateEncrypter.dll
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\obj\Release\net8.0\win-x64\refint\GateEncrypter.dll
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\obj\Release\net8.0\win-x64\GateEncrypter.pdb
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\obj\Release\net8.0\win-x64\GateEncrypter.genruntimeconfig.cache
+C:\Users\getba\OneDrive\Рабочий стол\Projects\C#\Gate\GateEncrypter\obj\Release\net8.0\win-x64\ref\GateEncrypter.dll

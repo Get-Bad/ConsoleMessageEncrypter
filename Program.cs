@@ -29,8 +29,8 @@ void AddSymbolsToDictionaries()
 {
     for (int i = 0; i < cryptoAlphabet.Length; i++)
     {
-        EncryptDictionary.Add(cryptoAlphabet[i], i);
-        DecryptDictionary.Add(i, cryptoAlphabet[i]);
+        EncryptDictionary.Add(cryptoAlphabet[i], i+1);
+        DecryptDictionary.Add(i+1, cryptoAlphabet[i]);
     }
 }
 
@@ -111,7 +111,7 @@ void CheckIntList (List<int> EncryptedMessage, Dictionary<char, int> CryptoDicti
 
 AddSymbolsToDictionaries();
 
-Console.WriteLine("Welcome to Gate v1.1 by Get_Bad!");
+Console.WriteLine("Welcome to Gate v1.2 by Get_Bad!");
 Console.WriteLine("");
 
 while (true)
