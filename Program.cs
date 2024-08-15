@@ -1,6 +1,4 @@
-﻿
-
-string lowerRussianAlphabet1 = "абвгдеёжзийклмноп";
+﻿string lowerRussianAlphabet1 = "абвгдеёжзийклмноп";
 string lowerRussianAlphabet2 = "рстуфхцчшщъыьэюя";
 string upperRussianAlphabet1 = "АБВГДЕЁЖЗИЙКЛМНОП";
 string upperRussianAlphabet2 = "РСТУФХЦЧШЩЪЫЬЭЮЯ";
@@ -25,7 +23,7 @@ List<int> EncryptedMessageList = [];
 List<int> DecryptedMessageList = [];
 
 
-void AddSymbolsToDictionaries()
+void AddSymbolsToDictionaries()     //  Adding all chars into the dictionaries
 {
     for (int i = 0; i < cryptoAlphabet.Length; i++)
     {
@@ -34,7 +32,7 @@ void AddSymbolsToDictionaries()
     }
 }
 
-void ConvertStringToIntList(string convertWord, Dictionary<char, int> ConvertDictionary, List<int> convertList)
+void ConvertStringToIntList(string convertWord, Dictionary<char, int> ConvertDictionary, List<int> convertList)     //  Function which convert message or key for encrypt/decrypt into the int values
 {
     convertList.Clear();
     foreach (char c in convertWord)
@@ -46,7 +44,7 @@ void ConvertStringToIntList(string convertWord, Dictionary<char, int> ConvertDic
     }
 }
 
-void ConvertIntListToString(string finalMessage, Dictionary<int, char> ConvertDictionary, List<int> convertList)
+void ConvertIntListToString(string finalMessage, Dictionary<int, char> ConvertDictionary, List<int> convertList)    //  Function which convert encrypted/decrypted message from int value to string value
 {
     finalMessage = null;
     foreach (int numOfWord in convertList)
@@ -60,7 +58,7 @@ void ConvertIntListToString(string finalMessage, Dictionary<int, char> ConvertDi
     Console.WriteLine(finalMessage);
 }
 
-void EncryptList(List<int> MessageList, List<int> KeyList, List<int> EncryptedMessageList)
+void EncryptList(List<int> MessageList, List<int> KeyList, List<int> EncryptedMessageList)      //  Function which encrypt message with a key 
 {
     EncryptedMessageList.Clear();
     foreach(int num1 in MessageList)
@@ -73,7 +71,7 @@ void EncryptList(List<int> MessageList, List<int> KeyList, List<int> EncryptedMe
     }
 }
 
-void DecryptList(List<int> MessageList, List<int> KeyList, List<int> DecryptedMessageList, Dictionary<int, char> ConvertDictionary)
+void DecryptList(List<int> MessageList, List<int> KeyList, List<int> DecryptedMessageList, Dictionary<int, char> ConvertDictionary)     //  Function which decrypt message with a key 
 {
     int dictCount = ConvertDictionary.Count;
     DecryptedMessageList.Clear();
@@ -94,7 +92,7 @@ void DecryptList(List<int> MessageList, List<int> KeyList, List<int> DecryptedMe
     }
 }
 
-void CheckIntList (List<int> EncryptedMessage, Dictionary<char, int> CryptoDictionary)
+void CheckIntList (List<int> EncryptedMessage, Dictionary<char, int> CryptoDictionary)      //  Function which check encrypted message for compliance with the max lenght of the dictionary
 {
     int cryptoDictionaryCount = CryptoDictionary.Count;
     for (int i = 0; i < EncryptedMessage.Count; i++)
@@ -109,15 +107,15 @@ void CheckIntList (List<int> EncryptedMessage, Dictionary<char, int> CryptoDicti
 
 
 
-AddSymbolsToDictionaries();
+AddSymbolsToDictionaries();     //  Begin of program
 
-Console.WriteLine("Welcome to Gate v1.2 by Get_Bad!");
+Console.WriteLine("Welcome to Gate v1.2 by Get_Bad!");      //  Some useless info
 Console.WriteLine("");
 
-while (true)
+while (true)  
 {
     Console.WriteLine("");
-    Console.WriteLine("English - 1, Русский - 2");
+    Console.WriteLine("English - 1, Русский - 2");      //  Language select
     string languageChoose = Console.ReadLine();
 
     if (languageChoose == "1")
@@ -125,11 +123,11 @@ while (true)
         while (true)
         {
             Console.WriteLine("");
-            Console.WriteLine("Encrypt mode - 1, Decrypt mode - 2, Change language - 3");
+            Console.WriteLine("Encrypt mode - 1, Decrypt mode - 2, Change language - 3");   // Mode select or return to select menu
             Console.Write("Choose mode: ");
             string cryptoMode = Console.ReadLine();
 
-            if (cryptoMode == "1")
+            if (cryptoMode == "1")      //  Encrypt mode
             {
                 Console.WriteLine("");
                 Console.Write("Enter message: ");
@@ -144,7 +142,7 @@ while (true)
                 CheckIntList(EncryptedMessageList, EncryptDictionary);
                 ConvertIntListToString(finalMessage, DecryptDictionary, EncryptedMessageList);
             }
-            else if (cryptoMode == "2")
+            else if (cryptoMode == "2")     //  Encrypt mode
             {
                 Console.WriteLine("");
                 Console.Write("Enter message: ");
@@ -157,25 +155,27 @@ while (true)
                 ConvertStringToIntList(keyForDecrypt, EncryptDictionary, KeyList);
                 DecryptList(MessageList, KeyList, DecryptedMessageList, DecryptDictionary);
                 ConvertIntListToString(finalMessage, DecryptDictionary, DecryptedMessageList);
-            } else if (cryptoMode == "3")
+            } 
+            else if (cryptoMode == "3")     
             {
                 break;
             } else
             {
                 Console.WriteLine("");
-                Console.WriteLine("Invalid value!");
+                Console.WriteLine("Invalid value!");    //  Exception handler
             }
         }
-    } else if (languageChoose == "2")
+    } 
+    else if (languageChoose == "2")
     {
         while (true)
         {
             Console.WriteLine("");
-            Console.WriteLine("Режим шифрования - 1, Режим дешифрования - 2, Сменить язык - 3");
+            Console.WriteLine("Режим шифрования - 1, Режим дешифрования - 2, Сменить язык - 3");    //  Mode select or return to select mode
             Console.Write("Выберите режим: ");
             string cryptoMode = Console.ReadLine();
 
-            if (cryptoMode == "1")
+            if (cryptoMode == "1")  //  Encrypt mode
             {
                 Console.WriteLine("");
                 Console.Write("Введите сообщение: ");
@@ -190,7 +190,7 @@ while (true)
                 CheckIntList(EncryptedMessageList, EncryptDictionary);
                 ConvertIntListToString(finalMessage, DecryptDictionary, EncryptedMessageList);
             }
-            else if (cryptoMode == "2")
+            else if (cryptoMode == "2")     //  Decrypt mode
             {
                 Console.WriteLine("");
                 Console.Write("Введите сообщение: ");
@@ -204,19 +204,21 @@ while (true)
                 DecryptList(MessageList, KeyList, DecryptedMessageList, DecryptDictionary);
                 ConvertIntListToString(finalMessage, DecryptDictionary, DecryptedMessageList);
             }
-            else if (cryptoMode == "3")
+            else if (cryptoMode == "3")     
             {
                 break;
-            } else
+            } 
+            else
             {
                 Console.WriteLine("");
-                Console.WriteLine("Неподдерживаемое значение!");
+                Console.WriteLine("Неподдерживаемое значение!");    //  Exception handler
             }
         }
-    } else
+    } 
+    else
     {
         Console.WriteLine("");
-        Console.WriteLine("Invalid value!");
-        
+        Console.WriteLine("Invalid value!");    //  Exception handler
+
     }
 }
